@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    background-color: #d4ebdc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.menu_items ul {
+    display: flex;
+    gap: 25px;
+}
+
+.menu_items ul li {
+    list-style: none;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.menu_items ul li:hover {
+    color: #62144c;
+    transition: 0.4s;
+}
+
+.menu_items ul span {
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.menu_items ul span:hover {
+    color: #62144c;
+    transition: 0.4s;
+}
+
+.content {
+    background-color: #59d081;
+    width: 100%;
+    height: 470px;
+    display: flex;
+    align-items: center;
+    padding: 70px;
+}
+
+.description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content .description h2 {
+    color: white;
+    font-size: 55px;
+}
+
+.content .description p {
+    color: white;
+}
+
+.content .image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .image img {
+    width: 400px;
+}
+
+.button {
+    background-color: white;
+    color: #62144c;
+    width: 25%;
+    height: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.button:hover {
+    background-color: #62144c;
+    color: white;
+    transition: 0.6s;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.photos img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.photos {
+    background-color: #59d081;
+    padding: 20px; 
+}
+
+.subsection {
+    display: ruby-base; 
+    margin-top: 80px; 
+    flex: 0 0 300px; 
+    text-align: center; 
+    font-size: 16px;
+    margin: 10px 0;
+    color: white;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.first-photo {
+    max-width: 150px;
+}
+
+.footer{
+    background-color: white;
+}
+
+.footer {
+    padding: 80px 150px;
+    display: flex;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.information {
+    width: 50% !important;
+}
+
+.information .description_information p {
+    max-width: 80%;
+}
+
+#openModalBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 360px) {
+    .menu {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .menu_items ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .description, .content .image {
+        width: 100%;
+    }
+
+    .content .description h2 {
+        font-size: 32px;
+    }
+
+    .content .image img {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .information, .Website {
+        width: 100%;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+    .menu {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .menu_items ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .description, .content .image {
+        width: 100%;
+    }
+
+    .content .description h2 {
+        font-size: 36px;
+    }
+
+    .content .image img {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .information, .Website {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu_items ul {
+        gap: 15px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .description, .content .image {
+        width: 100%;
+    }
+
+    .content .description h2 {
+        font-size: 40px;
+    }
+
+    .content .image img {
+        width: 100%;
+    }
+
+    .button {
+        width: 50%;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .information, .Website {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu_items ul {
+        gap: 15px;
+    }
+
+    .content {
+        padding: 40px;
+        height: auto;
+    }
+
+    .description, .content .image {
+        width: 100%;
+    }
+
+    .content .description h2 {
+        font-size: 45px;
+    }
+
+    .content .image img {
+        width: 80%;
+    }
+
+    .button {
+        width: 50%;
+    }
+
+    .footer {
+        flex-direction: row;
+        padding: 40px 20px;
+    }
+
+    .information, .Website {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .menu {
+        padding: 25px;
+    }
+
+    .menu_items ul {
+        gap: 20px;
+    }
+
+    .content {
+        padding: 50px;
+        height: auto;
+    }
+
+    .description, .content .image {
+        width: 50%;
+    }
+
+    .content .description h2 {
+        font-size: 50px;
+    }
+
+    .content .image img {
+        width: 70%;
+    }
+
+    .button {
+        width: 30%;
+    }
+
+    .footer {
+        flex-direction: row;
+        padding: 50px 30px;
+    }
+
+    .information, .Website {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .menu {
+        padding: 30px;
+    }
+
+    .menu_items ul {
+        gap: 25px;
+    }
+
+    .content {
+        padding: 60px;
+        height: auto;
+    }
+
+    .description, .content .image {
+        width: 50%;
+    }
+
+    .content .description h2 {
+        font-size: 55px;
+    }
+
+    .content .image img {
+        width: 60%;
+    }
+
+    .button {
+        width: 25%;
+    }
+
+    .footer {
+        flex-direction: row;
+        padding: 60px 40px;
+    }
+
+    .information, .Website {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1441px) {
+    .menu {
+        padding: 35px;
+    }
+
+    .menu_items ul {
+        gap: 25px;
+    }
+
+    .content {
+        padding: 70px;
+        height: auto;
+    }
+
+    .description, .content .image {
+        width: 50%;
+    }
+
+    .content .description h2 {
+        font-size: 55px;
+    }
+
+    .content .image img {
+        width: 50%;
+    }
+
+    .button {
+        width: 25%;
+    }
+
+    .footer {
+        flex-direction: row;
+        padding: 70px 50px;
+    }
+
+    .information, .Website {
+        width: 50%;
+    }
+}
